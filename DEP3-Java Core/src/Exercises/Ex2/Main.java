@@ -1,5 +1,6 @@
 package Exercises.Ex2;
 
+import java.awt.*;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -7,7 +8,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
 
         String[] names = {"isuf.muca@crystal-system.eu",
                 "\n danjel.halili@crystal-system.eu",
@@ -32,45 +32,13 @@ public class Main {
                 "\n florin-adrian.dumitru@crystal-system.eu",
                 "\n victor.hincu@crystal-system.eu"};
 
-
         int option;
         Scanner scanner = new Scanner(System.in);
         Random randomName = new Random();
         int nr = randomName.nextInt(names.length);
 
-        System.out.println("Hello! Please choose an option:\n1.Display all names 2.Choose a random name");
+        System.out.println("Hello! Please choose an option:\n1.Display all names 2.Choose a random name 0.Exit");
         option = scanner.nextInt();
-
-
-        switch (option) {
-
-            case 1:
-                System.out.println(Arrays.toString(names));
-                break;
-
-            case 2:
-                System.out.println(names[nr]);
-                break;
-
-            default:
-                while (option > 2) {
-                    System.out.println("Please choose a valid option number!");
-                    option = scanner.nextInt();
-                }
-        }
-
-//        if (option == 1) {
-//            System.out.println(Arrays.toString(names));
-//        }
-//
-//        if(option == 2){
-//            System.out.println(names[nr]);
-//        }
-//
-//        while (option > 2){
-//            System.out.println("Please enter a valid option number!");
-//            scanner.nextInt();
-//        }
 
 
 //        System.out.println(Arrays.toString(names));
@@ -78,6 +46,27 @@ public class Main {
 //        int nr = rand.nextInt(names.length);
 //        System.out.println(names[nr]);
 
+
+        do {
+
+            if (option == 0)
+                break;
+            else if (option == 1) {
+                System.out.println(Arrays.toString(names));
+                break;
+            } else if (option == 2) {
+                System.out.println(names[nr]);
+                break;
+            } else if (option > 4) {
+                System.out.println("You haven't selected anything, please try again ");
+                System.out.println("Intoduce your option:");
+                option = scanner.nextInt();
+            }
+        } while (option != 0);
+
     }
 }
+
+
+
 
