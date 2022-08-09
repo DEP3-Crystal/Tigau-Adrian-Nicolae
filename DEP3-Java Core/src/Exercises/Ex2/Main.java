@@ -57,7 +57,7 @@ public class Main {
             } else if (option == 2) {
                 System.out.println(names[nr]);
                 break;
-            } else if (option > 3) {
+            } else if (option > 2) {
                 System.out.println("Option number is not valid!");
                 option = scanner.nextInt();
             }
