@@ -37,7 +37,7 @@ public class Main {
         Random randomName = new Random();
         int nr = randomName.nextInt(names.length);
 
-        System.out.println("Hello! Please choose an option:\n1.Display all names 2.Choose a random name 0.Exit");
+        System.out.println("Hello! Please choose an option:\n1.Display all names 2.Choose a random name");
         option = scanner.nextInt();
 
 
@@ -57,9 +57,8 @@ public class Main {
             } else if (option == 2) {
                 System.out.println(names[nr]);
                 break;
-            } else if (option > 4) {
-                System.out.println("You haven't selected anything, please try again ");
-                System.out.println("Intoduce your option:");
+            } else if (option > 3) {
+                System.out.println("Option number is not valid!");
                 option = scanner.nextInt();
             }
         } while (option != 0);
