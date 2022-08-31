@@ -1,0 +1,21 @@
+/* .portfolio-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+} */
+
+@media (max-width:768px) {
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:768px) {
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+}
