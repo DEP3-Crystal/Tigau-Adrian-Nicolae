@@ -37,7 +37,7 @@ public class Main {
         Random randomName = new Random();
         int nr = randomName.nextInt(names.length);
 
-        System.out.println("Hello! Please choose an option:\n1.Display all names 2.Choose a random name");
+        System.out.println("Hello! Please choose an option:\n1.Display all names 2.Choose a random name 0.Exit");
         option = scanner.nextInt();
 
 
@@ -48,20 +48,43 @@ public class Main {
 
 
         do {
-
-            if (option == 0)
+            if (option == 0) {
                 break;
-            else if (option == 1) {
+            } else if (option == 1) {
                 System.out.println(Arrays.toString(names));
                 break;
             } else if (option == 2) {
                 System.out.println(names[nr]);
                 break;
             } else if (option > 2) {
-                System.out.println("Option number is not valid!");
+                System.out.println("Invalid option number!");
                 option = scanner.nextInt();
             }
         } while (option != 0);
+
+
+//        do {
+//            switch (option) {
+//
+//                case 0:
+//                    break;
+//
+//                case 1:
+//                    System.out.println(Arrays.toString(names));
+//                    break;
+//
+//                case 2:
+//                    System.out.println(names[nr]);
+//                    break;
+//
+//                default:
+//                    if (option > 2) {
+//                        System.out.println("Invalid option number!");
+//                        option = scanner.nextInt();
+//                    }
+//            }
+//        } while (option != 0);
+
 
     }
 }
