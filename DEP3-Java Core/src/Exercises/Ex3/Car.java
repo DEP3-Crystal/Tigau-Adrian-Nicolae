@@ -2,7 +2,11 @@ package Exercises.Ex3;
 
 public class Car extends Vehicle {
 
-    public void turnOnAirConditioning(){
-        System.out.println("Turning on air conditioning");
+    public Car(String make, String model) {
+        super(make, model);
+    }
+
+    public void turnOnAirConditioning() {
+        System.out.println("Turning on air conditioning in " + (make + " " + model));
     }
 }
