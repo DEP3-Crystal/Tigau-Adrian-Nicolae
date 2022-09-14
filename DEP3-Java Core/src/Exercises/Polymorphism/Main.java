@@ -1,4 +1,4 @@
-package Exercises.Ex3;
+package Exercises.Polymorphism;
 
 import java.util.ArrayList;
 import java.util.List;

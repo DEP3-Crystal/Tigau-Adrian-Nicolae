@@ -1,5 +1,20 @@
 package Exercise3;
 
+//Implement the Rectangle class. It should extend the Shape class.
+//        Implementation should meet the below criteria:
+//        information about the width and length value as a double type non-arguments constructor which will set: the color field value to unknown , the isFilled field value to false and the width and length field value to 1
+//        four-arguments constructor: color , isFilled , width i length
+//        getter methods which will be responsible for returning the width and length value
+//        setter methods which will be responsible for setting the width and length value
+//        getArea method which will be responsible for calculating the surface area
+//        getPerimeter method which will be responsible for calculating the circuit
+//        toString method which should return the following information:
+//        Rectangle with width=? and length=? which is a subclass off y , where ? is a placeholder for the width and length value accordingly and the y info should be a result of the toString execution from the base class
+
+
+
+
+
 public class Rectangle extends Shape {
 
     private double width;

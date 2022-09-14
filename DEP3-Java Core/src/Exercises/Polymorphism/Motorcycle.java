@@ -1,4 +1,4 @@
-package Exercises.Ex3;
+package Exercises.Polymorphism;
 
 public class Motorcycle extends Vehicle {
 

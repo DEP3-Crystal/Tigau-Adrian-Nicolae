@@ -1,5 +1,13 @@
 package Exercise2;
 
+//Implement the Student class. It should extend the Person class.
+//        Implementation should meet the below criteria:
+//        three fields: type of study, year of study, study price
+//        three-arguments constructor: type of study, year of study, study price
+//        getter methods which will be responsible for returning declared fields
+//        setter methods which will be responsible for setting declared fields toString method which should return details information about a student
+
+
 public class Student extends Person {
 
     private String typeOfStudy;
